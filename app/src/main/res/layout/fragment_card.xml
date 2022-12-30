@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/myCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cards"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="19dp"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            />
+
+        <TextView
+            android:id="@+id/blance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myCard"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="40dp"
+            android:text="Balance"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Ammount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myCard"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/blance"
+            android:text="$ 2500.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myCard"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:text="Remove"
+            android:textColor="#D66262"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/atmCard1"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_below="@id/blance"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="19dp"
+            app:cardCornerRadius="11dp"
+            app:cardBackgroundColor="#FFA000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/blue" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/blance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/atmCard1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="40dp"
+            android:text="Balance"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Ammount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/atmCard1"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/blance1"
+            android:text="$ 2500.00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/remove1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/atmCard1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:text="Remove"
+            android:textColor="#D66262"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/atmCard2"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_below="@id/blance1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="19dp"
+            app:cardCornerRadius="11dp"
+            app:cardBackgroundColor="#EA80FC">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/black"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/atmCard2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/card_buttomdesign"
+            android:text="+Add new card"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+</FrameLayout>

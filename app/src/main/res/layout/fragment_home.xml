@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileHome"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/bellHome"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/bell"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/goodMorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning"
+            android:layout_toRightOf="@id/profileHome"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/personName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talha Waris"
+            android:textColor="@color/black"
+            android:layout_below="@id/goodMorn"
+            android:layout_toRightOf="@id/profileHome"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textSize="17sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/atmCardYellow"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            android:layout_below="@id/personName"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="19dp"
+            app:cardCornerRadius="11dp"
+            app:cardBackgroundColor="#EA80FC">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/yellow"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Services"
+            android:layout_below="@id/atmCardYellow"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:textSize="17sp"/>
+
+        <View
+            android:id="@+id/serviceView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_below="@id/service"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_view"
+            />
+
+        <TextView
+            android:id="@+id/billPayments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge and Bill payments"
+            android:layout_below="@id/serviceView"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="15dp"
+            android:textSize="17sp"/>
+
+        <View
+            android:id="@+id/billPaymentsView"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_below="@id/billPayments"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_view"
+            />
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/scan"
+            android:layout_below="@id/service"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/scanPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan and pay"
+            android:layout_below="@id/scan"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="45dp"/>
+
+        <ImageView
+            android:id="@+id/bank"
+            android:layout_width="31dp"
+            android:layout_height="33dp"
+            android:src="@drawable/bank"
+            android:layout_below="@id/service"
+            android:layout_toRightOf="@id/scan"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="87dp"/>
+
+        <TextView
+            android:id="@+id/toBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To bank"
+            android:layout_below="@id/bank"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/scanPay"
+            android:textSize="12sp"
+            android:layout_marginLeft="57dp"/>
+
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="31dp"
+            android:layout_height="33dp"
+            android:src="@drawable/wallet"
+            android:layout_below="@id/service"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"/>
+
+        <TextView
+            android:id="@+id/toWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To wallet"
+            android:layout_below="@id/wallet"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"/>
+
+
+        <ImageView
+            android:id="@+id/wBill"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/drop"
+            android:layout_below="@id/billPayments"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/waterBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Bill"
+            android:layout_below="@id/wBill"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="48dp"/>
+
+        <ImageView
+            android:id="@+id/gBill"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:src="@drawable/gasbottle"
+            android:layout_below="@id/billPayments"
+            android:layout_toRightOf="@id/wBill"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="93dp"/>
+
+        <TextView
+            android:id="@+id/gasBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gas Bill"
+            android:layout_below="@id/gBill"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/waterBill"
+            android:textSize="12sp"
+            android:layout_marginLeft="75dp"/>
+
+        <ImageView
+            android:id="@+id/eBill"
+            android:layout_width="31dp"
+            android:layout_height="34dp"
+            android:src="@drawable/flash"
+            android:layout_below="@id/billPayments"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"/>
+
+        <TextView
+            android:id="@+id/electricBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity Bill"
+            android:layout_below="@id/eBill"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="41dp"/>
+
+
+        <ImageView
+            android:id="@+id/iBill"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:src="@drawable/router"
+            android:layout_below="@id/waterBill"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/internetBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet Bill"
+            android:layout_below="@id/iBill"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="48dp"/>
+
+
+        <ImageView
+            android:id="@+id/mBill"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/mobile"
+            android:layout_below="@id/gasBill"
+            android:layout_toRightOf="@id/wBill"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="87dp"/>
+
+        <TextView
+            android:id="@+id/mobileBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Bill"
+            android:layout_below="@id/mBill"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/internetBill"
+            android:textSize="12sp"
+            android:layout_marginLeft="59dp"/>
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/arrowright"
+            android:layout_below="@id/electricBill"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/viewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textSize="12sp"
+            android:layout_below="@+id/electricBill"
+            android:textColor="@color/black"
+            android:layout_marginTop="49dp"
+            android:layout_toLeftOf="@+id/arrow"
+            android:layout_marginRight="8dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

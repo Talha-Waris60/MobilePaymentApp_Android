@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/screenImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screenimage" />
+
+    <TextView
+        android:id="@+id/content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="Manage bill payments easily \nwith secure payments"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10sp"
+        android:text="Organize your bills by keeping all of them in one place.A key \nthat unlocks more features of an app."
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signIn"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/content2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_btn1"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createAcc"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/signIn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_btn2"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottomContent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By continuing you agree to"
+        android:textColor="@color/white"
+        android:layout_below="@+id/createAcc"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/bottomContent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAcc"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="34dp"
+        android:text="terms of services and"
+        android:textColor="#D1A52A" />
+
+    <TextView
+        android:id="@+id/bottomContent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottomContent2"
+        android:layout_centerHorizontal="true"
+        android:text="privacy policy"
+        android:textColor="#D1A52A" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/bottomContent3"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/custom_line" />
+
+
+
+</RelativeLayout>
